@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base: #0a0c10;
+  --bg-surface: #111318;
+  --bg-card: #161920;
+  --border: #1e2128;
+  --accent: #22d3ee;
+  --accent-dim: #0e7490;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-base);
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: #2d3748;
+  border-radius: 3px;
+}
+
+/* Scan line animation for loading */
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(400%); }
+}
+
+.scan-line {
+  animation: scan 1.5s ease-in-out infinite;
+}
+
+/* Pulse glow for accent elements */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(34, 211, 238, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(34, 211, 238, 0.6); }
+}
+
+.glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Heatmap blend for Grad-CAM overlay */
+.heatmap-overlay {
+  mix-blend-mode: screen;
+  opacity: 0.7;
+}

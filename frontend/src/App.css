@@ -1,0 +1,5 @@
+@keyframes scan-progress {
+  0% { width: 0%; opacity: 1; }
+  70% { width: 90%; opacity: 1; }
+  100% { width: 100%; opacity: 0; }
+}
