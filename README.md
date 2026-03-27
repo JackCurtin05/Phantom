@@ -28,7 +28,7 @@ Upload a chest X-ray — Phantom classifies it as Normal, Bacterial Pneumonia, o
 
 ### Analysis Results
 <img width="2796" height="1847" alt="image" src="https://github.com/user-attachments/assets/f1367866-005d-485f-a3ee-c5f042f69522" />
-### Grad-Cam Results
+## Grad-CAM Results
 <img width="2720" height="1842" alt="image" src="https://github.com/user-attachments/assets/a6a6fca6-6151-485c-b704-9c6e2b14f50a" />
 
 ---
